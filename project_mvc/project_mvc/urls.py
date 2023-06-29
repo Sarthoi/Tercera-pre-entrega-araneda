@@ -20,9 +20,15 @@ from project_mvc.views import *
 from firstapp.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls,),
+    path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('motos/', motos, name='motos'),
     path('autos/', autos, name='autos'),
     path('users/', users, name='users'),
+    path('getmotos/', getmotos, name='getmotos'),
+    path('getautos/', getautos, name='getautos'),
+    path('getusers/', getusers, name='getusers'),
+    path('search_motos/', search_motos, name='search_motos'),
+    path('search_autos/', search_autos, name='search_autos'),
+    path('search_users/', search_users, name='search_users'),
 ]

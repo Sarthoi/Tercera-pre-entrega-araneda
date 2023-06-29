@@ -105,32 +105,108 @@ left: 200%;
     padding: 5px !important;
 }
 
+.form-select #op{
+    background: #000000d7 !important;
+    border: #28013f inset 1px !important;
+} 
+
 .selec_btn{
-    width: 40pc;
-    height: 30pc;
+    text-align: center;
+    margin: 5pc;
+    width: 50pc;
+    height: 10pc;
     position: relative;
-    display: grid ;
-    left: 32%;
-    grid-template-columns:repeat(2, 1fr);
-    transform: translateY(20%);
+    display: flex;
+    left: 25%;
+    grid-template-columns:repeat(3, 1fr);
+    transform: translateY(45%);
+    align-items: center;
 }
 
 .selec_btn #btn_index_menu{
 background: #470e669a ;
+width: 50pc;
+height: 100px;
 color: #fff;
 text-align: center ;
 font-size: 25px;
 font-weight: bold;
-margin: 15px;
+margin: 5px;
+padding-top: 25px ;
 border: #531574a9 outset 2px ;
 border-radius:  15px;
 text-decoration: none;
-align-items: center;
-position: relative;
-padding-top: 5pc;
+
 }
 .selec_btn #btn_index_menu:hover{
     background: #5f19859c ;
     border: #872db8a9 inset 2px ;
     transition: all .1s;
 }
+
+.selec_btn #label_btn{
+    color: #fff;
+    font-size: 35px;
+    font-style: italic;
+    position: absolute;
+    top: -50px;
+    left: 20pc;
+}
+
+.form_menu #m_label_search{
+    font-size: 25px;
+    margin: 25px 5pc;
+    color: #fff;
+}
+
+.form_menu #m_input_search{
+    width: 22pc !important;
+    margin-left: 12pc;
+    background: radial-gradient(#706e7044 70%, #000000f5 120%);
+    border: #28013f 1.5px inset ;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px;
+    transform: translateY(-62px);
+}
+
+.form_menu #btn_search{
+    background: radial-gradient(#5d208f 10%, #000000 120%);
+    color: #fff;
+    font-size: 28px;
+    margin-top: 25px;
+    height: 3pc;
+    width: 10pc;
+    border: 1px solid #24073d;
+    border-radius: 15px;
+    position: relative;
+    left: 35pc;
+    transform: translateY(-8.2pc);
+    }
+    
+    .form_menu #btn_search:hover{
+        background: radial-gradient(#551e72 40%, #000000 110%);
+        transition: all .15s;
+        transition-timing-function: ease;
+    }
+    #for_label{
+        width: 19pc;
+        background: #3c066bf8;
+        color: #fff;
+        margin-left:49pc;
+        border: #000 2px solid;
+        text-align: center;
+    }
+
+
+    #for_item{
+        width: 19pc;
+        text-align: justify;
+        background: #3a016dde;
+        font-size: 25px;
+        padding: 5px 25px ;
+        margin: 2px 49pc;
+        color: #fff;
+        list-style: none;
+        border: #000 2px solid;
+    }

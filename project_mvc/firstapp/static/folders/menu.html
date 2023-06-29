@@ -13,6 +13,15 @@
     <input type="number" name="m_year" id="m_input" maxlength="" required/>
 
     <input class="btn_reg" name="btn_reg" type="submit" <link rel="" type="" href="">>Registrar</button>
+        {%if motos%}
+            {% for m in motos%}
+                <li>{{m.m_marca}}</li>
+                <li>{{m.m_marca}}</li>
+                <li>{{m.m_year}}</li>
+                <li>{{m.m_est}}</li>
+            {%endfor%}
+        {%endif%}
+
 
     <form action="" method="post">
         <input type="text" >

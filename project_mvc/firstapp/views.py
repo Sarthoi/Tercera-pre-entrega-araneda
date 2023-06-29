@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from firstapp.models import *
 
 # Create your views here.
@@ -39,3 +40,43 @@ def users(request):
         usersbd.save()
         return render(request, 'folders/fusers.html')
     return render(request, 'folders/fusers.html')
+
+def getmotos(request):
+    return render(request, 'folders/gmotos.html')
+
+def search_motos(request):
+    if request.GET['getmotos']:
+        m_marca = request.GET['getmotos']
+        motos= Motos.objects.filter(m_marca= m_marca)
+        return render(request, 'folders/gmotos.html', {"motos": motos})
+    else:
+        anw= "No se encontraton datos"
+        
+    return HttpResponse(anw)
+
+
+def getautos(request):
+    return render(request, 'folders/gautos.html')
+
+def search_autos(request):
+    if request.GET['getautos']:
+        a_marca = request.GET['getautos']
+        autos= Autos.objects.filter(a_marca= a_marca)
+        return render(request, 'folders/gautos.html', {"autos": autos})
+    else:
+        anw= "No se encontraton datos"
+        
+    return HttpResponse(anw)
+
+def getusers(request):
+    return render(request, 'folders/gusers.html')
+
+def search_users(request):
+    if request.GET['getusers']:
+        user_name = request.GET['getusers']
+        users= Users.objects.filter(user_name= user_name)
+        return render(request, 'folders/gusers.html', {"users": users})
+    else:
+        anw= "No se encontraton datos"
+        
+    return HttpResponse(anw)

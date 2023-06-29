@@ -1,0 +1,30 @@
+{% extends 'folders/fmotos.html' %}
+{% load static %}
+
+{% block  changetitle%}
+<title>Registro Motos</title>
+{% endblock  %}
+
+<div>
+{% block changepage %}
+
+<form class="form_menu" action="{% url 'search_motos' %}" method="GET"> 
+      <label id="m_label_search">Buscar</label>
+      <input type="text" id="m_input_search" name="getmotos">
+      <button id="btn_search" type="submit" value="send">Buscar</button>
+</form>
+
+{%if motos %}
+            {% for m in motos %}
+            <h2 id="for_label">Datos del Registro</h2>
+                <li id="for_item">Marca:  {{m.m_marca}}</li>
+                <li id="for_item">Modelo: {{m.m_modelo}}</li>
+                <li id="for_item">Año:    {{m.m_year}}</li>
+                <li id="for_item">Estado: {{m.m_est}}</li>
+            {%endfor%}
+        
+        {%endif%}
+
+{% endblock %}
+
+</div>
