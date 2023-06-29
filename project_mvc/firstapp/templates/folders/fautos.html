@@ -1,0 +1,37 @@
+{% extends 'folders/index.html' %}
+{% load static %}
+
+{% block  changetitle%}
+<title>Autos</title>
+{% endblock  %}
+
+<div>
+{% block changepage %}
+
+<div class="main_form">
+    <h2>Autos</h2>
+    
+    <form class="form_menu" action="/autos/" method="POST"> {% csrf_token %}
+      <label for="m_marca" id="m_label">Marca</label>
+      <input type="text" name="a_marca" id="m_input" required/>
+
+      <label for="m_modelo" id="m_label">Modelo</label>
+      <input type="text" name="a_modelo" id="m_input" required/>
+
+      <label for="m_year" id="m_label">Año</label>
+      <input type="number" name="a_year" id="m_input" maxlength="4" required/>
+
+      <label for="est" id="m_label">Estado</label>
+      <select class="form-select" name="a_est" id="est"aria-label="Default select example">       
+        <option value="nuevo" id="op" selected>Nuevo</option>
+        <option value="usado" id="op">Usado</option>
+        {% comment %} <option value="deshabilitado">Deshabilitado</option> {% endcomment %}
+      </select>
+
+      <button id="btn_reg" name="btn_reg" type="submit">Registrar</button>
+
+    </form>
+  </div>
+
+{% endblock  %}
+</div>

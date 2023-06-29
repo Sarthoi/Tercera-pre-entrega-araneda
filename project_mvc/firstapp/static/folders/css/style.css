@@ -1,0 +1,136 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: #202020 !important; */
+    font-size: 20px !important;
+    color: #d8d0d0;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/regera.jpg');
+}
+
+/* .main_nav {
+    background: #c21717;
+    border-bottom: 1px solid #700000;
+} */
+
+/* .nav_log {
+    width: 70px;
+    margin-left: 50px;
+    position: relative;
+    transform: translateY(31px);
+} */
+
+/* .nav_menu ul {
+
+    margin: 0 8pc;
+    padding: 0;
+    gap: 40px;
+    color: #ffff;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.main_form {
+    width: 25pc;
+    height: max-content;
+    background:  radial-gradient(#160124bb 60%, #000000 100%);
+    color: #000;
+    margin: 2pc 40% ;
+    padding: 20px;
+    border: 1px solid #28013f;
+    border-radius: 25px;
+    /* opacity: 20%; */
+}
+
+.main_form h2{
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.form_menu {
+width: 50px;
+
+}
+
+.form_menu #m_label{
+    margin: 15px 10px;
+    color: #fff;
+}
+
+.form_menu #m_input{
+    width: 22pc !important;
+    background: radial-gradient(#706e7044 70%, #000000f5 120%);
+    border: #28013f 1.5px inset ;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.form_menu #btn_reg{
+background: radial-gradient(#5d208f 10%, #000000 120%);
+color: #fff;
+font-size: 28px;
+margin-top: 25px;
+height: 3pc;
+width: 10pc;
+border: 1px solid #24073d;
+border-radius: 15px;
+position: relative;
+left: 200%;
+}
+
+.form_menu #btn_reg:hover{
+    background: radial-gradient(#551e72 40%, #000000 110%);
+    transition: all .15s;
+    transition-timing-function: ease;
+}
+
+.form-select{
+    color: #fff !important;
+    background: radial-gradient(#706e7044 70%, #000000d7 110%) !important;
+    font-size: 20px !important;
+    width: 22pc !important;
+    border: #28013f inset 1px !important;
+    padding: 5px !important;
+}
+
+.selec_btn{
+    width: 40pc;
+    height: 30pc;
+    position: relative;
+    display: grid ;
+    left: 32%;
+    grid-template-columns:repeat(2, 1fr);
+    transform: translateY(20%);
+}
+
+.selec_btn #btn_index_menu{
+background: #470e669a ;
+color: #fff;
+text-align: center ;
+font-size: 25px;
+font-weight: bold;
+margin: 15px;
+border: #531574a9 outset 2px ;
+border-radius:  15px;
+text-decoration: none;
+align-items: center;
+position: relative;
+padding-top: 5pc;
+}
+.selec_btn #btn_index_menu:hover{
+    background: #5f19859c ;
+    border: #872db8a9 inset 2px ;
+    transition: all .1s;
+}
